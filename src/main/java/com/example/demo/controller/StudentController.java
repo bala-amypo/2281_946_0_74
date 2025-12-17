@@ -23,7 +23,7 @@ public class StudentController {
     }
 
     @GetMapping("/fetche")
-    public List<Student> fetchrecord(){
+    public List<Student> fetchRecord(){
         return ser.fetchRecord();
     }
 }
