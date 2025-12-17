@@ -9,6 +9,6 @@ import com.example.demo.entity.Student;
 public interface StudentService {
   
     Student createData(Student stu);
-    List<Student> fetchrecord();
+    List<Student> fetchRecord();
     
 }
