@@ -1,5 +1,5 @@
 package com.example.demo.service.implementation;
-import java.util.List;
+import java.util.*;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
@@ -23,6 +23,7 @@ public class StuServiceImpl implements StudentService{
         return repo.findAll();
     }
 
+   @Override
     public Optional<Student> fetchDataById(int id){
         return repo.findById(id);
     }
