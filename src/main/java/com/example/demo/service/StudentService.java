@@ -11,4 +11,5 @@ public interface StudentService {
     Student createData(Student stu);
     List<Student> fetchRecord();
      Optional<Student> fetchDataById(int id);   
+     String deleteData(int id);
 }
