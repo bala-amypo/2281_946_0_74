@@ -34,6 +34,7 @@ public class StudentController {
     @PutMapping("/updatedata/{id}")
     public String updateDataById(@PathVariable int id,@RequestBody Student stu){
 
+    
      stu.setId(id);
      ser.createData( stu);
 
