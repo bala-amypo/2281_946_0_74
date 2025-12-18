@@ -36,11 +36,16 @@ public class StudentController {
 
     Optional<Student> student = ser.fetchDataById(id);
     
-    if(student.isPresent())
+    if(student.isPresent()){
      stu.setId(id);
      ser.createData( stu);
 
      return "Data Updated Successfully";
+    }
+    else{
+
+        return id+ "not found";
+    }
 
 
 
