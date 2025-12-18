@@ -29,7 +29,7 @@ public class StuServiceImpl implements StudentService{
     }
 
     @Override
-    public String deleteData(int id){
-        return repo.deleteById(id); 
+    public void deleteData(int id){
+         repo.deleteById(id); 
     }
 }

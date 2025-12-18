@@ -52,14 +52,11 @@ public class StudentController {
     public String deleteDataById(@PathVariable int id){
     Optional<Student> student = ser.fetchDataById(id);
     if(student.isPresent()){
-    
      ser.deleteData(id);
-
      return "Data deleted Successfully";
     }
     else{
-
-        return id+ "not found";
+        return id + "not found";
     }
 
 
