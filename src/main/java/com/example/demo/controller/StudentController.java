@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
+
 @RestController
+@RequestMapping("/locations")
 public class StudentController {
     
     @Autowired

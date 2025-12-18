@@ -7,6 +7,8 @@ public class Student{
     @Id 
     private int id;
     private String name;
+    @Column(unique=true)
+    @NotBlank(message="email must not be empty")
     private String email;
     private float cgpa;
 
