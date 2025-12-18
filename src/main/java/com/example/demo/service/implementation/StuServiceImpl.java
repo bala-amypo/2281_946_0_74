@@ -25,7 +25,7 @@ public class StuServiceImpl implements StudentService{
 
    @Override
     public Optional<Student> fetchDataById(int id){
-        return repo.findById(id);
+        return repo.findByEmail();
     }
 
     @Override
